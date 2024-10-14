@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Track Your Interest in Field</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Track Your Interest</h1>
+    <p id="description">Please fill in the below form to track your interest in which field.</p>
+    <form id="survey-form" action="" method="post">
+      <fieldset>
+      <label for="name" id="name-label">Name: 
+        <input type="text" id="name" name="name" required placeholder="Enter your name" class=""></label>
+      
+      <label for="email" id="email-label">Email: 
+      <input type="email" id="email" name="email" required placeholder="Enter your email"></label>
+
+      <label for="number" id="number-label">Age(optional):
+        <input type="number" id="number" name="number" min="14" max="80" placeholder="Enter your age">
+      </label>
+
+
+      <label for="dropdown">Select your field of interest: 
+        <select id="dropdown" name="field-option" required>
+          <option value="">Select your field</option>
+          <option value="1">Web Development</option>
+          <option value="2">Application Development</option>
+          <option value="3">Frontend Development</option>
+          <option value="4">Backend Development</option>
+          <option value="5">UI-UX Designe</option>
+          <option value="6">Fullstack Development</option>
+          <option value="7">Other</option>
+        </select>
+      </label>
+</fieldset>
+    <fieldset>
+      <legend>Your level of progress</legend>
+      <label for="beginner"><input type="radio" id="beginner" name="progress-level" checked class="inline" value="beginner"> Beginner</label>
+
+      <label for="intermediate"><input type="radio" id="intermediate" name="progress-level" class="inline" value="intermediate"> Intermediate</label>
+
+      <label for="advanced">
+        <input type="radio" id="advanced" name="progress-level" class="inline" value="advanced"> Advanced</label>
+        <label>
+          
+          <input type="radio" id="professional" name="progress-level" class="inline" value="professional"> Professional
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Your Tech stack</legend>
+        <label for="html">
+          <input type="checkbox" id="html" name="html" class="inline" value="html5"> HTML5
+        </label>
+        <label for="css">
+          <input type="checkbox" id="css" name="css" class="inline" value="css3">CSS3
+        </label>
+        <label for="javascript">
+          <input type="checkbox" id="javascript" name="javascript" class="inline" value="javascript">Javascript
+        </label>
+        <label for="responsive-web-design">
+          <input type="checkbox" id="responsive-web-design" name="responsive-web-design" class="inline" value="responsive web design">Responsive Web Design
+        </label>
+        <label for="react">
+          <input type="checkbox" id="react" name="react" class="inline" value="react.js">React.js
+        </label>
+        <label for="vue">
+          <input type="checkbox" id="vue" name="vue" class="inline" value="vue.js">Vue.js
+        </label>
+        <label for="bootstrap">
+          <input type="checkbox" id="bootstrap" name="bootstrap" class="inline" value="bootstrap">Bootstrap
+        </label>
+      </fieldset>
+      <label for="">Motivation
+      <textarea id="motivation" name="motivation" placeholder="Describe your interest here..." rows="3" cols="30"></textarea>
+      </label>
+      <input type="submit" id="submit" value="Submit">
+    </form>
+  </body>
+</html>
